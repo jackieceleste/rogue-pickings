@@ -56,6 +56,7 @@ p {
 header {
 	margin: 0 auto;
 	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
 }
@@ -70,16 +71,11 @@ header h1 span {
 }
 
 header nav {
-
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: center;
-	justify-content: space-between;
-	flex-flow: column;
 }
 header nav ul li {
 	text-transform: uppercase;
@@ -227,4 +223,9 @@ footer span {
 
 /*****Desktop Styles*****/
 @media all and (min-width: 1200px){
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+	}
+
 }
