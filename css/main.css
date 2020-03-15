@@ -13,14 +13,17 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -52,37 +55,42 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
+	border-bottom: solid 3px #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 header h1 {
-	float: left;
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 0 10px 0;
+	border-bottom: solid 3px #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	flex-flow: column;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -97,11 +105,11 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .main-image {
 	height: auto;
-	float: left;
 }
 .main-image img {
 	width: 100%;
@@ -110,7 +118,6 @@ header nav ul li a{
 
 .main-title {
 	height: auto;
-	float: left;
 }
 .main-title h3 {
 	text-align: left;
@@ -126,9 +133,8 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 90%;
 	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
 }
 
@@ -136,14 +142,14 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+.section-two p,
+.section-three p {
+	padding: 10px 0;
 }
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 0;
 }
 
 .menu {
@@ -168,7 +174,6 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	clear: both;
@@ -176,10 +181,30 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
+
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/*****Tablet Styles*****/
+@media all and (min-width: 768px) {
+	bottom-section {
+		justify-content: space-between;
+
+	}
+
+	section-one {}
+
+	section-two {}
+
+	section-three {}
+}
+
+/*****Desktop Styles*****/
+@media all and (min-width: 1200px){
 }
