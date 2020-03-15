@@ -18,7 +18,6 @@ body {
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
 	width: 90%;
 	display: flex;
 	justify-content: center;
@@ -57,7 +56,6 @@ p {
 header {
 	border-bottom: solid 3px #77a466;
 	margin: 0 auto;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
@@ -144,7 +142,7 @@ header nav ul li a{
 
 .section-two p,
 .section-three p {
-	padding: 10px 0;
+	padding: 0 0;
 }
 
 .section-two h4,
@@ -194,15 +192,32 @@ footer span {
 /*****Tablet Styles*****/
 @media all and (min-width: 768px) {
 	bottom-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		justify-content: space-between;
-
+		flex-flow: row wrap;
 	}
 
-	section-one {}
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+	border-bottom: 1px solid #eee;
+	height: auto;
+}
 
-	section-two {}
+	.section-one {
+	}
 
-	section-three {}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.section-three {
+	}
+
 }
 
 /*****Desktop Styles*****/
