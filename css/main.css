@@ -56,7 +56,6 @@ p {
 header {
 	margin: 0 auto;
 	justify-content: center;
-	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
 }
@@ -97,7 +96,6 @@ header nav ul li a{
 	clear: both;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	align-items: baseline;
 	flex-flow: row wrap;
 }
@@ -105,6 +103,11 @@ header nav ul li a{
 .bottom-section {
 	border-top: 1px solid #eee;
 	border-bottom: 3px solid #eee;
+}
+
+.section-two,
+.section-three {
+	border-top: 1px solid #eee;
 }
 
 .main-image {
